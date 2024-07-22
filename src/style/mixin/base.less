@@ -1,0 +1,41 @@
+/* 设置背景图全铺满 */
+.set-back(@imgUrl) {
+    background-image: url(@imgUrl);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
+  
+  /* 定位水平垂直居中 */
+  .center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  /* 实现flex 水平垂直居中 */
+  .flex-cc {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* 文字超出省略(单行文字) */
+  .word-mission {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+  
+  .word-line-mission(@lineNumber) {
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: @lineNumber; /* 这里是超出几行省略 */
+  }
+  
+  .wd(@width, @height) {
+    width: @width;
+    height: @height;
+  }
+  

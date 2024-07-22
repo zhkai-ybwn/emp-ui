@@ -1,0 +1,416 @@
+@font-face {
+  font-family: HarmonyOS-Black;
+  src: url('./fonts/HarmonyOS_Sans_SC_Black.ttf');
+}
+
+@font-face {
+  font-family: HarmonyOS-Bold;
+  src: url('./fonts/HarmonyOS_Sans_SC_Bold.ttf');
+}
+
+@font-face {
+  font-family: HarmonyOS-Light;
+  src: url('./fonts/HarmonyOS_Sans_SC_Light.ttf');
+}
+
+@font-face {
+  font-family: HarmonyOS-Medium;
+  src: url('./fonts/HarmonyOS_Sans_SC_Medium.ttf');
+}
+
+@font-face {
+  font-family: HarmonyOS-Regular;
+  src: url('./fonts/HarmonyOS_Sans_SC_Regular.ttf');
+}
+
+@font-face {
+  font-family: HarmonyOS-Thin;
+  src: url('./fonts/HarmonyOS_Sans_SC_Thin.ttf');
+}
+
+/* ======================================================== */
+
+@font-face {
+  font-family: PangMenZhengDaoBiaoTiTi;
+  src: url('./fonts/PangMenZhengDaoBiaoTiTi-1.ttf');
+}
+
+@font-face {
+  font-family: YouSheBiaoTiHei;
+  src: url('./fonts/YouSheBiaoTiHei-2.ttf');
+}
+
+@font-face {
+  font-family: AlimamaShuHeiTi-Bold;
+  src: url('./fonts/AlimamaShuHeiTi-Bold.ttf');
+}
+
+/* ==================================================== */
+@font-face {
+  font-family: Barlow-Bold-Italic;
+  src: url('./fonts/Barlow Bold Italic.ttf');
+}
+
+@font-face {
+  font-family: Barlow-Normal-Medium-Italic;
+  src: url('./fonts/Barlow Medium Italic.ttf');
+}
+
+@font-face {
+  font-family: Barlow-Italic;
+  src: url('./fonts/Barlow Italic.ttf');
+}
+
+@font-face {
+  font-family: Barlow-SemiBold;
+  src: url('./fonts/Barlow SemiBold.ttf');
+}
+
+@font-face {
+  font-family: Barlow-Regular;
+  src: url('./fonts/Barlow Regular.ttf');
+}
+
+@font-face {
+  font-family: Barlow-Medium;
+  src: url('./fonts/Barlow Medium.ttf');
+}
+
+/* ==================================================== */
+
+@font-face {
+  font-family: SourceHanSansCN-Normal;
+  src: url('./fonts/SourceHanSansCN-Normal.otf');
+}
+
+@font-face {
+  font-family: SourceHanSansCN-Regular;
+  src: url('./fonts/SourceHanSansCN-Regular.otf');
+}
+
+@font-face {
+  font-family: Inter-Regular;
+  src: url('./fonts/Inter Regular.ttf');
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  background-color: var(--color-bg-1);
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+}
+
+.echarts-tooltip-diy {
+  background: linear-gradient(
+    304.17deg,
+    rgb(253 254 255 / 60%) -6.04%,
+    rgb(244 247 252 / 60%) 85.2%
+  ) !important;
+  border: none !important;
+
+  /* Note: backdrop-filter has minimal browser support */
+
+  border-radius: 6px !important;
+  backdrop-filter: blur(10px) !important;
+
+  .content-panel {
+    display: flex;
+    justify-content: space-between;
+    width: 164px;
+    height: 32px;
+    margin-bottom: 4px;
+    padding: 0 9px;
+    line-height: 32px;
+    background: rgb(255 255 255 / 80%);
+    border-radius: 4px;
+    box-shadow: 6px 0 20px rgb(34 87 188 / 10%);
+  }
+
+  .tooltip-title {
+    margin: 0 0 10px;
+  }
+
+  p {
+    margin: 0;
+  }
+
+  .tooltip-title,
+  .tooltip-value {
+    display: flex;
+    align-items: center;
+    color: #1d2129;
+    font-weight: bold;
+    font-size: 13px;
+    line-height: 15px;
+    text-align: right;
+  }
+
+  .tooltip-item-icon {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin-right: 8px;
+    border-radius: 50%;
+  }
+}
+
+.app-container {
+  padding: 0 20px 20px;
+
+  .header {
+    margin-bottom: 16px;
+
+    &-query {
+      margin-bottom: 10px;
+
+      .arco-form-item-layout-inline {
+        margin-right: 15px;
+      }
+    }
+
+    &-operation {
+      &-right {
+        display: flex;
+        align-items: center;
+        justify-content: end;
+      }
+    }
+  }
+}
+
+.general-card {
+  border: none;
+  border-radius: 4px;
+
+  & > .arco-card-header {
+    height: auto;
+    padding: 20px;
+    border: none;
+  }
+
+  & > .arco-card-body {
+    padding: 0 20px 20px;
+  }
+}
+
+.split-line {
+  border-color: rgb(var(--gray-2));
+}
+
+:deep(.arco-table-th) {
+  &:last-child {
+    .arco-table-th-item-title {
+      margin-left: 16px;
+    }
+  }
+}
+
+.arco-table-cell {
+  .circle {
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    margin-right: 4px;
+    background-color: rgb(var(--blue-6));
+    border-radius: 50%;
+
+    &.pass {
+      background-color: rgb(var(--green-6));
+    }
+
+    &.fail {
+      background-color: rgb(var(--red-6));
+    }
+  }
+}
+
+fieldset {
+  margin-bottom: 15px;
+  padding: 15px 15px 0;
+  background: #fff;
+  border: 1px solid #e4e7ed;
+  border-radius: 3px;
+}
+
+fieldset legend {
+  padding: 2px 5px;
+  color: #5e6d82;
+  background: #fff;
+  border: 1px solid #e4e7ed;
+  border-radius: 3px;
+}
+
+.arco-trigger-menu {
+  max-height: 264px;
+  padding: 3px;
+  background-color: #2c3645;
+  border: none;
+
+  .arco-trigger-menu-item {
+    color: rgb(255 255 255 / 85%);
+    font-weight: 400;
+    font-size: 14px;
+    font-family: 'HarmonyOS Sans SC', sans-serif;
+    font-style: normal;
+
+    &:hover {
+      background: #3c485c;
+      border-radius: 4px;
+    }
+  }
+}
+
+.arco-trigger-position-rt .arco-trigger-arrow,
+.arco-tooltip-content {
+  color: rgb(255 255 255 / 85%);
+  font-weight: 400;
+  font-size: 14px;
+  font-family: 'HarmonyOS Sans SC', sans-serif;
+  font-style: normal;
+  background-color: #2c3645;
+}
+
+.arco-dropdown {
+  padding: 3px;
+  background: #2c3645;
+  border: 1px solid #2c3645;
+
+  .arco-dropdown-option {
+    color: rgb(255 255 255 / 85%);
+    font-weight: 400;
+    font-size: 14px;
+    font-family: 'HarmonyOS Sans SC', sans-serif;
+    font-style: normal;
+    line-height: 22px; /* 157.143% */
+
+    &:hover {
+      color: rgb(255 255 255 / 85%);
+      background-color: #3c485c;
+      border-radius: 4px;
+    }
+  }
+}
+
+.arco-menu-pop.arco-menu-pop-header.arco-menu-has-icon {
+  background-color: #1b1f29;
+
+  &:hover {
+    background-color: #2c3645;
+  }
+}
+
+.arco-menu-pop.arco-menu-pop-header.arco-menu-selected.arco-menu-has-icon {
+  background-color: #2c3645;
+}
+
+.arco-trigger-menu-pop .arco-trigger-menu-pop-header {
+  color: rgb(255 255 255 / 85%);
+  background-color: #2c3645;
+}
+
+.arco-menu-inner .arco-icon {
+  font-size: 16px;
+}
+
+[arco-theme='dark'] .layout-content {
+  background-image: url('@/assets/imgs/manage/layout-bg.png');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.nav-drop {
+  position: absolute;
+  top: 5.3px;
+  left: -45px;
+}
+
+.arco-trigger-content.arco-tooltip-content {
+  background-color: #04060a;
+}
+
+.arco-trigger-arrow.arco-tooltip-popup-arrow {
+  background-color: #04060a;
+}
+
+.arco-trigger-position-rt .arco-trigger-content {
+  background: #2c3645;
+  border-radius: 4px;
+  box-shadow: 0 5px 5px -3px rgb(0 0 0 / 10%), 0 8px 10px 1px rgb(0 0 0 / 6%),
+    0 3px 14px 2px rgb(0 0 0 / 5%);
+}
+
+.container-breadcrumb .arco-breadcrumb-item {
+  color: #bcc4d0 !important;
+
+  &:last-child {
+    color: #4b5b76 !important;
+  }
+}
+
+.arco-trigger-menu .arco-trigger-menu-has-icon {
+  color: #bcc4d0;
+
+  &:hover {
+    color: rgb(255 255 255 / 85%);
+    background-color: #3c485c;
+    border-radius: 4px;
+  }
+}
+
+.arco-notification-right {
+  margin: auto;
+}
+
+.arco-notification-success {
+  color: rgb(255 255 255 / 90%) !important;
+  background-color: rgb(0 0 0 85%);
+  border: none;
+
+  .arco-notification-content {
+    color: rgb(255 255 255 / 90%) !important;
+    font-weight: 500;
+    font-size: 16px;
+    font-family: HarmonyOS-Regular, sans-serif;
+    line-height: 24px;
+  }
+
+  .arco-notification-title {
+    color: rgb(255 255 255 / 90%) !important;
+    font-weight: 500;
+    font-size: 16px;
+    font-family: HarmonyOS-Regular, sans-serif;
+    line-height: 24px;
+  }
+}
+
+.arco-drawer-body {
+  margin-bottom: 10px;
+}
+
+/* 修改滚动条的样式 */
+::-webkit-scrollbar {
+  width: 6px !important; /* 设置滚动条的宽度 */
+}
+
+::-webkit-scrollbar-track {
+  background: inherit; /* 设置滚动条的轨道背景色 */
+  border-radius: inherit;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #4b5b76 !important; /* 设置滚动条的滑块颜色 */
+  border-radius: 10px; /* 设置滚动条滑块的边缘弧度 */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555; /* 设置滚动条的滑块悬停时的颜色 */
+}

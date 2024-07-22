@@ -1,0 +1,182 @@
+[arco-theme='dark']{
+      .arco-picker,.arco-select-view-single,.arco-input-wrapper,.arco-select-view-multiple{
+          background-color: transparent;
+          border: 1px solid #3c485c;
+      }
+
+      .arco-select-view-multiple .arco-select-view-inner .arco-select-view-tag{
+        background: #2C3645;
+        border: 1px solid #232A35;
+        border-radius: 4px;
+      }
+
+      .arco-picker-focused,.arco-select-view-focus {
+        border: 1px solid #266FE8;
+      }
+
+
+  .arco-select-dropdown-list {
+    padding: 2px;
+  }
+
+  .arco-tree-node-title:hover {
+    background: linear-gradient(
+      270deg,
+      rgb(131 142 168 / 26%) 0%,
+      rgb(188 201 223 / 10%) 100%
+    );
+    border-radius: 4px;
+  }
+
+  .arco-select-dropdown .arco-select-option-active,
+  .arco-select-dropdown
+    .arco-select-option:not(
+      .arco-select-dropdown .arco-select-option-disabled
+    ):hover {
+    background: #3c485c;
+    border-radius: 4px;
+  }
+
+  .arco-pagination-item .arco-pagination-item-active {
+    color: rgb(255 255 255 / 70%);
+    background-color: #266fe8;
+  }
+
+  .container-breadcrumb .arco-breadcrumb-item {
+    color: #4b5b76 !important;
+
+    &:last-child {
+      color: #bcc4d0 !important;
+    }
+  }
+
+  .arco-select-dropdown {
+    padding: 4px;
+  }
+
+  .arco-popconfirm-popup-content {
+    background-color: rgb(0 0 0 / 85%);
+    border: none;
+    backdrop-filter: blur(5px);
+  }
+
+  .arco-popconfirm-popup-arrow {
+    background-color: rgb(0 0 0 / 85%);
+    border: none;
+  }
+
+  .arco-drawer {
+    background-color: #232a35;
+  }
+
+  .arco-drawer-header {
+    border-bottom: 1px solid #484849;
+
+    .arco-drawer-title {
+      color: rgb(255 255 255 / 90%);
+      font-weight: 500;
+      font-family: HarmonyOS-Regular, sans-serif;
+    }
+  }
+
+  .arco-drawer-footer {
+    border-top: 1px solid #484849;
+  }
+
+  .arco-tree-node {
+    color: #bcc4d0;
+    font-weight: 400;
+    font-size: 16px;
+    font-family: HarmonyOS-Regular, sans-serif;
+  }
+
+  .arco-spin-tip {
+    margin: 0 0 0 4px;
+  }
+
+  .arco-message-success {
+    background: #f6ffed;
+    border: 1px solid #b7eb8f;
+    box-shadow: 0 8px 10px -5px rgb(0 0 0 / 8%), 0 16px 24px 2px rgb(0 0 0 / 4%),
+      0 6px 30px 5px rgb(0 0 0 / 5%);
+
+    .arco-message-content {
+      color: rgb(0 0 0 / 90%);
+      font-weight: 400;
+      font-size: 14px;
+      font-family: HarmonyOS-Regular, sans-serif;
+      font-style: normal;
+      line-height: 22px; /* 157.143% */
+    }
+
+    svg.arco-icon.arco-icon-close {
+      color: rgb(0 0 0 / 45%);
+    }
+  }
+
+  .arco-message-error {
+    background: #fff1f0;
+    border: 1px solid #ffccc7;
+    box-shadow: 0 8px 10px -5px rgb(0 0 0 / 8%), 0 16px 24px 2px rgb(0 0 0 / 4%),
+      0 6px 30px 5px rgb(0 0 0 / 5%);
+
+    .arco-message-content {
+      color: rgb(0 0 0 / 90%);
+      font-weight: 400;
+      font-size: 14px;
+      font-family: HarmonyOS-Regular, sans-serif;
+      font-style: normal;
+      line-height: 22px; /* 157.143% */
+    }
+
+    svg.arco-icon.arco-icon-close {
+      color: rgb(0 0 0 / 45%);
+    }
+  }
+
+  .arco-icon-hover:hover::before {
+    background-color: transparent;
+  }
+
+  .black-modal {
+    background-color: #000;
+
+    .arco-modal-footer {
+      margin-top: 0;
+      text-align: end;
+    }
+  }
+
+  .up-item {
+    width: 80px;
+    height: 32px;
+    line-height: 32px;
+    text-align: center;
+    border-radius: 4px;
+
+    &:hover {
+      background-color: #3c485c;
+    }
+
+    &:active {
+      background-color: #266fe8;
+    }
+  }
+
+  .report-content {
+    color: rgb(255 255 255 / 80%);
+    font-weight: 400;
+    font-size: 14px;
+    font-family: HarmonyOS-Regular, sans-serif;
+    font-style: normal;
+    line-height: 24px;
+  }
+
+}
+
+:root [arco-theme='dark'] {
+  --color-bg-popup: #2c3645;
+  --color-primary-light-1: #1c222b;
+  --color-fill-2: #3c485c;
+  --color-bg-2: #232A35;
+}
